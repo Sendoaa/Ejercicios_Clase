@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio5x</title>
+</head>
+
+<body>
+
+    <script>
+        const numeroSecreto = Math.floor(Math.random() * 10) + 1;
+
+        let intentos = 5;
+
+        while (intentos > 0) {
+
+            let adivinanza = prompt(`Adivina el número del 1 al 10. Te quedan ${intentos} intentos:`);
+
+            adivinanza = parseInt(adivinanza);
+
+            if (adivinanza === numeroSecreto) {
+                alert("¡Felicidades! Adivinaste el número correcto.");
+                break;
+            } else {
+                alert("No era ese numero. Sigue intentandolo.");
+            }
+
+            intentos--;
+
+            if (intentos === 0) {
+                alert(`Lo siento, no te quedan más intentos. El número era ${numeroSecreto}.`);
+            }
+        }
+    </script>
+
+</body>
+
+</html>

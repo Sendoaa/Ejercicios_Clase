@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej7 - Tema 2</title>
+</head>
+<body>
+    
+    <script> 
+        let numerotlf = prompt("Introduce tu número de teléfono");
+        let bizkaia = 946;
+        let araba = 945;
+        let guipuzkoa = 943;
+        
+        if (numerotlf.startsWith(bizkaia)){
+            alert("Tu número de teléfono es de Bizkaia");
+        } else if(numerotlf.startsWith(araba)){
+            alert("Tu número de teléfono es de Araba");
+        } else if(numerotlf.startsWith(guipuzkoa)){
+            alert("Tu número de teléfono es de Guipuzkoa");
+        } else {
+            console.log("Tu número de teléfono no es de Euskadi");
+        }
+    </script>
+
+</body>
+</html>

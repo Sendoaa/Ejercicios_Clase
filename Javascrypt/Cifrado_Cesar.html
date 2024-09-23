@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Cifrado Cesar</title>
+</head>
+<body>
+    
+    <script>
+    const letras = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+
+    let palabra = prompt("Introduce la palabra que quieras cifrar");
+
+    let cifrado = "";
+
+    for(let i = 0; i < palabra.length; i++){
+        let letra = palabra[i];
+        let posicion = letras.indexOf(letra);
+        let nuevaPosicion = (posicion + 3) % 26;
+        cifrado += letras[nuevaPosicion];
+    }
+
+    alert("La palabra cifrada es: " + cifrado);
+
+    let palabra2 = prompt("Introduce la palabra que quieras descifrar");
+
+    let descifrado = "";
+
+    for(let i = 0; i < palabra2.length; i++){
+        let letra = palabra2[i];
+        let posicion = letras.indexOf(letra);
+        let nuevaPosicion = (posicion - 3 + 26) % 26;
+        descifrado += letras[nuevaPosicion];
+    }
+
+    alert("La palabra descifrada es: " + descifrado);
+    
+   
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+#Iniciar {
+    border-radius: 10px;
+    background-color: aqua;
+    display: block;
+    margin: 0 auto;
+}
+
+.Titulo {
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    color: blue;
+}

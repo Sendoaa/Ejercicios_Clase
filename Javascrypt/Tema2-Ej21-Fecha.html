@@ -1,17 +1,36 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ej-20</title>
+    <title>Ejercicio21</title>
 </head>
 <body>
-    <script>
-        let fecha = new Date();
-        let nacimiento = new Date(2001, 9, 11); // Año, mes, día, empieza en 0 el mes
-        let diferencia = fecha - nacimiento;
-        let años = Math.floor(diferencia / (1000 * 60 * 60 * 24 * 365.25));
-        console.log(años);
-    </script>
+    <script type="text/javascript">
+        function calcular_edad() {
+            var nacimiento = new Date(2004, 3, 21);
+            var fecha_hoy = new Date();
+            var edad_milisegundos = fecha_hoy - nacimiento;
+            var años_en_ms = 1000 * 60 * 60 * 24 * 365.25;
+            var edad = (edad_milisegundos / años_en_ms);
+            if (edad >= 18) {
+                document.write("Tienes " + edad + " años, eres mayor de edad.");
+            }
+            var domingos = 0;
+            var año = fecha_hoy.getFullYear();
+            while (año < 2100) {
+                var fecha_diciembre = new Date(año, 11, 19);
+                if (fecha_diciembre.getDay() === 0) {
+                    domingos++;
+                }
+                año++;
+            }
+            document.write("<br>Habrá " + domingos + " domingos el 19 de diciembre hasta el año 2100.");
+        }
+        calcular_edad();
+    </script>    
+</body>
+
+</html>
 </body>
 </html>

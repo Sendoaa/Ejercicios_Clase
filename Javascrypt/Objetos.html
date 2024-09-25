@@ -1,0 +1,69 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej - Objetos</title>
+</head>
+
+<body>
+    <script>
+        let estudiante1 = { nombre: 'Sendoa', apellido: 'Avedillo', calificaciones: { mate: 10, fisica: 9, ingles: 8 } };
+
+        function agregarCalificacion(estudiante, asignatura, calificacion) {
+            if (asignatura in estudiante.calificaciones) {
+                document.write("La asignatura '" + asignatura + "' ya existe. Usa la función modificar si deseas cambiar la calificación.<br>");
+            } else {
+                estudiante.calificaciones[asignatura] = calificacion;
+                document.write("Asignatura '" + asignatura + "' agregada con éxito.<br>");
+            }
+        }
+
+        function modificarCalificacion(estudiante, asignatura, calificacion) {
+            if (asignatura in estudiante.calificaciones) {
+                estudiante.calificaciones[asignatura] = calificacion;
+                document.write("Calificación de '" + asignatura + "' modificada con éxito.<br>");
+            } else {
+                document.write("La asignatura '" + asignatura + "' no existe. Usa la función agregar si deseas añadirla.<br>");
+            }
+        }
+
+        function calcularPromedio(estudiante) {
+            let totalNota = 0;
+            let totalAsignaturas = 0;
+
+            for (let asignatura in estudiante.calificaciones) {
+                totalNota += estudiante.calificaciones[asignatura];
+                totalAsignaturas++;
+            }
+
+            document.write("El promedio de las notas de " + estudiante['nombre'] + " es: " + (totalNota / totalAsignaturas));
+        }
+
+        function mostrarInformacion(estudiante) {
+            for (let clave in estudiante) {
+                if (clave === 'calificaciones') {
+                    for (let asignatura in estudiante.calificaciones) {
+                        document.write(asignatura + ': ' + estudiante.calificaciones[asignatura] + '<br>'); // Mostramos asignatura y calificación
+                    }
+                } else {
+                    document.write(estudiante[clave] + "<br>");
+                }
+            }
+        }
+
+        mostrarInformacion(estudiante1);
+
+        agregarCalificacion(estudiante1, 'medio', 2);
+        modificarCalificacion(estudiante1, 'mate', 2);
+
+
+        mostrarInformacion(estudiante1);
+
+        calcularPromedio(estudiante1);
+
+
+    </script>
+</body>
+
+</html>

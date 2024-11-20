@@ -1,43 +1,24 @@
 <template>
-  <div>
-    <label for="nombre">Nombre: </label>
-    <input type="text" id="nombre" v-model="nombre" />
-    <br><br>
-    <label for="apellidos">Apellido: </label>
-    <input type="text" id="apellidos" v-model="apellidos" />
-    <br><br>
-    <label for="fechaNac">Fecha de Nacimiento:  </label>
-    <input type="date" id="fechaNac" v-model="fechaNac" @change="calcularEdad" />
-    <br><br>
-    <br><br>
-    <p>{{ nombre }} {{ apellidos }} tiene {{ edad }} años</p>
-  </div>
+  <h1>Añade Tus Datos</h1>
+  <form @submit.prevent>
+    <input type="text" v-model="nombre" placeholder="Nombre"><br>
+    <input type="text" v-model="apellidos" placeholder="Apellidos"><br>
+    <input type="number" v-model="fechaNacimiento" placeholder="Año de Nacimiento"><br>
+  </form>
+
+  <p>Usted: {{ nombre }} {{ apellidos }} tiene: {{ edad }} años</p>
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref , computed } from 'vue';
 
-let nombre = ref('');
-let apellidos = ref('');
-let fechaNac = ref('');
-let edad = ref(0);
+const nombre = ref('');
+const apellidos = ref('');
+const fechaNacimiento = ref('1900');
 
-function calcularEdad() {
-  if (fechaNac.value) {
-    
-    let nacimiento = new Date(fechaNac.value);
-
-    let hoy = new Date();
-
-    let edadCalculada = hoy.getFullYear() - nacimiento.getFullYear();
-
-    let diferenciaDeMes = hoy.getMonth() - nacimiento.getMonth();
-
-    if (diferenciaDeMes < 0 || (diferenciaDeMes === 0 && hoy.getDate() < nacimiento.getDate())) {
-      edadCalculada--;
-    }
-
-    edad.value = edadCalculada;
-  }
-}
+const edad = computed(() => {
+  const añoActual = new Date().getFullYear();
+  const fechaNac = fechaNacimiento.value;
+  return añoActual - fechaNac;
+});
 </script>

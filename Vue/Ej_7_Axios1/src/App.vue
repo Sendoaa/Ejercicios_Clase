@@ -1,8 +1,8 @@
 <template>
 
-  <h1>Axios</h1>
+  <h1>Axios GET & POST</h1>
 
-  <h2>Usuarios traidos de jsonplaceholder</h2>
+  <h2>Gestor de tareas</h2>
   <ul>
     <li v-for="usuario in users" :key="usuario.id">{{ usuario.name }}</li>
   </ul>

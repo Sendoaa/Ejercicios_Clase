@@ -3,10 +3,10 @@
 </script>
 
 <template>
-  
+
   <!DOCTYPE html>
 
-<html lang="es">
+  <html lang="es">
 
   <head>
 
@@ -59,7 +59,8 @@
 
         <h3 class="text-white font-semibold">Monitor your health vitals smartly anywhere you go.</h3>
 
-        <button class="mt-6 bg-white text-gray-600 font-bold px-6 py-3 rounded-full shadow-lg text-sm">PRE ORDER</button>
+        <button class="mt-6 bg-white text-gray-600 font-bold px-6 py-3 rounded-full shadow-lg text-sm">PRE
+          ORDER</button>
 
       </div>
 
@@ -77,13 +78,16 @@
 
           <h4 class="font-bold text-2xl text-gray-700">Exercise Metrics</h4>
 
-          <p class="text-sm text-gray-600 font-semibold">Our Smart Health Monitoring Wristwatch is able to capture you vitals while you exercise. You can create different category of exercises and can track your vitals on the go.</p>
+          <p class="text-sm text-gray-600 font-semibold">Our Smart Health Monitoring Wristwatch is able to capture you
+            vitals while you exercise. You can create different category of exercises and can track your vitals on the
+            go.</p>
 
         </div>
 
         <div class="">
 
-          <img src="https://raw.githubusercontent.com/ammezie/tailwind_landing_page/master/assets/health.svg" alt="Monitoring" />
+          <img src="https://raw.githubusercontent.com/ammezie/tailwind_landing_page/master/assets/health.svg"
+            alt="Monitoring" />
 
         </div>
 
@@ -93,7 +97,8 @@
 
         <div class="">
 
-          <img src="https://raw.githubusercontent.com/ammezie/tailwind_landing_page/master/assets/report.svg" alt="Reporting" />
+          <img src="https://raw.githubusercontent.com/ammezie/tailwind_landing_page/master/assets/report.svg"
+            alt="Reporting" />
 
         </div>
 
@@ -101,7 +106,8 @@
 
           <h4 class="font-bold text-xl text-gray-800">Reporting</h4>
 
-          <p class="text-gray-600 text-sm">Our Smart Health Monitoring Wristwatch can generate a comprehensive report on your vitals depending on your settings either daily, weekly, monthly, quarterly or yearly.</p>
+          <p class="text-gray-600 text-sm">Our Smart Health Monitoring Wristwatch can generate a comprehensive report on
+            your vitals depending on your settings either daily, weekly, monthly, quarterly or yearly.</p>
 
         </div>
 
@@ -113,13 +119,16 @@
 
           <h4 class="font-bold text-xl text-gray-800">Syncing</h4>
 
-          <p class="text-gray-600 text-sm">Our Smart Health Monitoring Wristwatch allows you to sync data across all your mobile devices whether iOS, Android or Windows OS and also to your laptop whether MacOS, GNU/LInux or Windows OS.</p>
+          <p class="text-gray-600 text-sm">Our Smart Health Monitoring Wristwatch allows you to sync data across all
+            your mobile devices whether iOS, Android or Windows OS and also to your laptop whether MacOS, GNU/LInux or
+            Windows OS.</p>
 
         </div>
 
         <div class="">
 
-          <img src="https://raw.githubusercontent.com/ammezie/tailwind_landing_page/master/assets/sync.svg" alt="Syncing" />
+          <img src="https://raw.githubusercontent.com/ammezie/tailwind_landing_page/master/assets/sync.svg"
+            alt="Syncing" />
 
         </div>
 
@@ -131,19 +140,33 @@
 
     <section class="">
 
-      <div class="">
+      <div class="bg-gray-200">
 
-        <h2 class="">Testimonials</h2>
+        <h2 class="m-4 py-2 text-center text-2xl font-extrabold text-gray-900">Testimonials</h2>
 
-        <div class="">
+        <div class="flex py-5">
 
-          <div class="">
+          <div class="bg-white m-2 shadow-lg rounded-sm">
 
-            <div class="">
+            <div class="m-3">
 
-              <p class="">Monitoring and tracking my health vitals anywhere I go and on any platform I use has never been easier.</p>
+              <p class="">Monitoring and tracking my health vitals anywhere I go and on any platform I use has never
+                been easier.</p>
 
-              <p class="">John Doe</p>
+              <p class="text-sm my-3 text-gray-500 font-semibold">John Doe</p>
+
+            </div>
+
+          </div>
+
+          <div class="bg-white m-2 shadow-lg rounded-sm">
+
+            <div class="m-3">
+
+              <p class="">As an Athlete, this is the perfect product for me. I wear my Smart Health Monitoring
+                Wristwatch everywhere i go, even in the bathroom since it's waterproof.</p>
+
+              <p class="text-sm my-3 text-gray-500 font-semibold">Jane Doe</p>
 
             </div>
 
@@ -151,23 +174,11 @@
 
           <div class="">
 
-            <div class="">
+            <div class="bg-white m-2 shadow-lg rounded-sm">
 
-              <p class="">As an Athlete, this is the perfect product for me. I wear my Smart Health Monitoring Wristwatch everywhere i go, even in the bathroom since it's waterproof.</p>
+              <p class="m-3">I don't regret buying this wearble gadget. One of the best gadgets I own!.</p>
 
-              <p class="">Jane Doe</p>
-
-            </div>
-
-          </div>
-
-          <div class="">
-
-            <div class="">
-
-              <p class="">I don't regret buying this wearble gadget. One of the best gadgets I own!.</p>
-
-              <p class="">James Doe</p>
+              <p class="m-3 text-sm my-3 text-gray-500 font-semibold">James Doe</p>
 
             </div>
 
@@ -183,13 +194,14 @@
 
     <section style="">
 
-      <div class="">
+      <div class="bg-indigo-500 text-center">
 
-        <h2 class="">Limited in Stock</h2>
+        <h2 class=" text-white font-bold text-2xl p-3">Limited in Stock</h2>
 
-        <h3 class="">Get yourself the Smart Health Monitoring Wristwatch!</h3>
+        <h3 class="text-white font-semibold">Get yourself the Smart Health Monitoring Wristwatch!</h3>
 
-        <button class="">Pre Order</button>
+        <button class="mb-5 mt-6 bg-white text-gray-600 font-bold px-6 py-3 rounded-full shadow-lg text-sm">PRE
+          ORDER</button>
 
       </div>
 
@@ -197,130 +209,46 @@
 
     <!--Footer-->
 
-    <footer class="">
-
-      <div class="">
-
-        <div class="">
-
-          <div class="">
-
-            <h5 class="">Links</h5>
-
-            <ul class="">
-
-              <li class="">
-
-                <a href="#" class="">FAQ</a>
-
-              </li>
-
-              <li class="">
-
-                <a href="#" class="">Help</a>
-
-              </li>
-
-              <li class="mt-2">
-
-                <a href="#" class="">Support</a>
-
-              </li>
-
-            </ul>
-
-          </div>
-
-          <div class="">
-
-            <h5 class="">Legal</h5>
-
-            <ul class="">
-
-              <li class="">
-
-                <a href="#" class="">Terms</a>
-
-              </li>
-
-              <li class="mt-2">
-
-                <a href="#" class="">Privacy</a>
-
-              </li>
-
-            </ul>
-
-          </div>
-
-          <div class="">
-
-            <h5 class="">Social</h5>
-
-            <ul class="">
-
-              <li class="">
-
-                <a href="#" class="">Facebook</a>
-
-              </li>
-
-              <li class="mt-2">
-
-                <a href="#" class="">Linkedin</a>
-
-              </li>
-
-              <li class="mt-2">
-
-                <a href="#" class="">Twitter</a>
-
-              </li>
-
-            </ul>
-
-          </div>
-
-          <div class="">
-
-            <h5 class="">Company</h5>
-
-            <ul class="">
-
-              <li class="">
-
-                <a href="#" class="">Official Blog</a>
-
-              </li>
-
-              <li class="mt-2">
-
-                <a href="#" class="">About Us</a>
-
-              </li>
-
-              <li class="mt-2">
-
-                <a href="#" class="">Contact</a>
-
-              </li>
-
-            </ul>
-
-          </div>
-
+    <footer class="bg-white-800 text-white py-12">
+      <div class="w-full mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div>
+          <h5 class="text-gray-800 font-bold mb-4">LINKS</h5>
+          <ul>
+            <li><a href="#" class="text-gray-600">FAQ</a></li>
+            <li><a href="#" class="text-gray-600">Help</a></li>
+            <li><a href="#" class="text-gray-600">Support</a></li>
+          </ul>
         </div>
-
+        <div>
+          <h5 class="text-gray-800 font-bold mb-4">LEGAL</h5>
+          <ul>
+            <li><a href="#" class="text-gray-600">Terms</a></li>
+            <li><a href="#" class="text-gray-600">Privacy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="text-gray-800 font-bold mb-4">SOCIAL</h5>
+          <ul>
+            <li><a href="#" class="text-gray-600">Facebook</a></li>
+            <li><a href="#" class="text-gray-600">LinkedIn</a></li>
+            <li><a href="#" class="text-gray-600">Twitter</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="text-gray-800 font-bold mb-4">COMPANY</h5>
+          <ul>
+            <li><a href="#" class="text-gray-600">Blog</a></li>
+            <li><a href="#" class="text-gray-600">About Us</a></li>
+            <li><a href="#" class="text-gray-600">Contact</a></li>
+          </ul>
+        </div>
       </div>
-
     </footer>
 
   </body>
 
-</html>
+  </html>
 
 </template>
 
-<style>
-
-  </style>
+<style></style>

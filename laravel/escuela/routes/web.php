@@ -8,5 +8,6 @@ use App\Http\Controllers\AlumnoController;
 // });
 
 Route::get('/', [AlumnoController::class, 'index']);
-
 Route::get('alumnos', [AlumnoController::class, 'index'] )->name('alumnos.index');
+Route::get('alumnos/{alumno}', [AlumnoController::class, 'show'])->name('alumnos.show');
+Route::get('alumnos/edit/{alumno}', [AlumnoController::class, 'edit'] )->name('alumnos.edit');

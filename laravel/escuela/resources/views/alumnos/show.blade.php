@@ -1,3 +1,8 @@
+@extends('layouts.plantilla')
+
+@section('title', 'Listado de Alumnos')
+
+@section('content')
 <table border="1">
     <tr>
         <td>Nombre</td>
@@ -16,3 +21,4 @@
         <td>{{ $alumno->direccion }}</td>
     </tr>
 </table>
+@endsection

@@ -11,3 +11,6 @@ Route::get('/', [AlumnoController::class, 'index']);
 Route::get('alumnos', [AlumnoController::class, 'index'] )->name('alumnos.index');
 Route::get('alumnos/{alumno}', [AlumnoController::class, 'show'])->name('alumnos.show');
 Route::get('alumnos/edit/{alumno}', [AlumnoController::class, 'edit'] )->name('alumnos.edit');
+Route::put('alumnos/update/{alumno}', [AlumnoController::class,'update'])->name('alumnos.update');
+Route::get('alumnos/create', [AlumnoController::class,'create'])->name('alumnos.create');
+Route::post('alumnos/store', [AlumnoController::class,'store'])->name('alumnos.store');

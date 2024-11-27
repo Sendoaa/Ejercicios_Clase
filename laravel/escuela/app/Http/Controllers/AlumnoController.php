@@ -21,7 +21,7 @@ class AlumnoController extends Controller
      */
     public function create()
     {
-        //
+        return view('alumnos.create');
     }
 
     /**
@@ -29,7 +29,13 @@ class AlumnoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $alumno = new Alumno();
+        $alumno->nombre_ape = $request->nombre_ape;
+        $alumno->edad = $request->edad;
+        $alumno->telefono = $request->telefono;
+        $alumno->direccion = $request->direccion;
+        $alumno->save();
+        return redirect()->route('alumnos.show',$alumno);
     }
 
     /**
@@ -54,9 +60,14 @@ class AlumnoController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, Alumno $alumno)
     {
-        //
+        $alumno->nombre_ape = $request->nombre_ape;
+        $alumno->edad = $request->edad;
+        $alumno->telefono = $request->telefono;
+        $alumno->direccion = $request->direccion;
+        $alumno->save();
+        return redirect()->route('alumnos.index');
     }
 
     /**

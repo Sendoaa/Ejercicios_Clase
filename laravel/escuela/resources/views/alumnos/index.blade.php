@@ -1,3 +1,8 @@
+@extends('layouts.plantilla')
+
+@section('title', 'Listado de Alumnos')
+
+@section('content')
 <h2>LISTADO DE ALUMNOS</h2>
 
 <table style="border:2px solid black">
@@ -29,3 +34,4 @@
 
 {{-- Paginacion --}}
 {{ $alumnos->links() }}
+@endsection

@@ -3,6 +3,7 @@
 @section('title', 'Crear Alumno')
 
 @section('content')
+<h2>Crear ALumno</h2>
 <form method="post" action="{{ route('alumnos.store') }}">
     @csrf
 
@@ -21,3 +22,36 @@
     <button type="submit">ENVIAR</button>
 </form>
 @endsection
+
+<style>
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        margin: auto;
+    }
+
+    label {
+        margin-top: 10px;
+    }
+
+    input {
+        margin-bottom: 10px;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    button {
+        padding: 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #45a049;
+    }
+</style>

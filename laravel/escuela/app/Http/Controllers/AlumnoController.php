@@ -29,6 +29,12 @@ class AlumnoController extends Controller
      */
     public function store(Request $request)
     {
+
+        $request ->validate([
+            'nombre_ape' => 'required|min:5',
+            'edad' => 'required'
+        ]);
+
         $alumno = new Alumno();
         $alumno->nombre_ape = $request->nombre_ape;
         $alumno->edad = $request->edad;
@@ -73,8 +79,16 @@ class AlumnoController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Alumno $alumno)
     {
-        //
+        $alumno->delete();
+        return redirect()->route('alumnos.index');
+    }  
+    
+    
+    // Confirmar eliminación de alumno
+    public function confirm(Alumno $alumno)
+    {
+        return view('alumnos.confirm', compact('alumno'));
     }
 }

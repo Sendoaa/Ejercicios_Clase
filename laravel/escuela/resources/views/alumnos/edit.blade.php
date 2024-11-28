@@ -3,7 +3,7 @@
 @section('title', 'Listado de Alumnos')
 
 @section('content')
-<h2>Editar Alumno</h2>
+<h2>EDITAR ALUMNO</h2>
 <form action="{{ route('alumnos.update', $alumno) }}" method="POST">
     @csrf
     @method('PUT')
@@ -22,3 +22,37 @@
     <button type="submit">Enviar actualización</button>
 </form>
 @endsection
+
+<style>
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        margin: auto;
+    }
+
+    label {
+        margin-top: 10px;
+    }
+
+    input {
+        margin-bottom: 10px;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    button {
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #45a049;
+    }
+</style>

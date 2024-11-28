@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('cursos', function (Blueprint $table) {
             $table->id();
+            $table->string('nombre', 75);
+            $table->integer('nivel', 35);
+            $table->string('horasAcademicas', 35);
+            $table->foreignId('profesor_id')->constrained('profesors')->onDelete('cascade');
             $table->timestamps();
         });
     }

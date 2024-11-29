@@ -43,7 +43,7 @@ onMounted(async () => {
 const mostrarFotos = async (albumId) => {
   try {
     console.log('Album ID:', albumId);
-    const responsef = await axios.get(`https://jsonplaceholder.typicode.com/albums/${albumId}/photos`);
+    const responsef = await axios.get(`https://jsonplaceholder.typicode.com/albums/${albumId}/photos?_limit=10`);
     console.log(responsef.data);
 
     const photos = ref([])
@@ -70,5 +70,13 @@ const mostrarFotos = async (albumId) => {
   } catch (error) {
     console.error('Error fetching album photos:', error);
   }
+};
+
+const añadirFotos = async (albumId) => {
+try {
+  
+} catch (error) {
+  console.error('Ha ocurrido un error añadiendo la imagen:', error);
+}
 };
 </script>
